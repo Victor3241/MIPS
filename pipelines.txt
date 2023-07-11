@@ -1,0 +1,38 @@
+IF/ID
+
+pc_plus_one => pc_plus_one_if
+instr => instr_if
+
+ID/EX
+
+MEMTOREG => MEMTOREG_id
+REGWRITE => REGWRITE_id
+MEMWRITE = > MEMWRITE_id
+BRANCH => BRANCH_id
+ALUOp => ALUOp_id 
+ALUSrc => ALUSrc_id
+REGDST => REGDST_id
+pc_plus_one_if => pc_plus_one_id
+rd1 => rd1_id
+rd2 => rd2_id
+ExtImm => ExtImm_id
+rd => rd_id
+rt => rt_id
+
+EX/MEM
+MEMTOREG_id => MEMTOREG_ex
+REGWRTIE_id => REGWRTIE_ex
+MEMWRITE_id => MEMWRITE_ex
+BRANCH_id => BRANCH_ex
+branch_address => branch_address_ex
+ALURes => ALURes_ex
+wd => wd_ex
+wa => wa_ex
+
+MEM/WB
+MEMTOREG_ex => MEMTOREG_wb
+REGWRTIE_ex => REGWRTIE_wb
+ALURes_ex => Address
+wa_ex => wa_wb
+wd_ex => wd_wb
+
